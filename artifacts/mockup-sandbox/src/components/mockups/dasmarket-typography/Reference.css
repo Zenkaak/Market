@@ -7,20 +7,21 @@
 }
 
 .eyebrow {
-  font: 600 11px/1.35 var(--app-font-sans);
-  letter-spacing: .08em;
+  font: 600 12px/1.4 var(--app-font-sans);
+  letter-spacing: .01em;
+  text-transform: none;
 }
 
 .display {
   font-family: var(--app-font-sans);
-  font-weight: 800;
-  letter-spacing: -.05em;
+  font-weight: 700;
+  letter-spacing: -.035em;
 }
 
 .brand,
 .brand-mark {
   font-family: var(--app-font-sans);
-  letter-spacing: -.045em;
+  letter-spacing: -.025em;
 }
 
 .nav-links a,
@@ -33,15 +34,15 @@
 .button {
   font-family: var(--app-font-sans);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .hero h1 {
   font-family: var(--app-font-sans);
-  font-size: clamp(50px, 5.6vw, 74px);
-  font-weight: 800;
-  line-height: 1.04;
-  letter-spacing: -.055em;
+  font-size: clamp(48px, 4.7vw, 66px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.045em;
 }
 
 .hero h1 em {
@@ -51,23 +52,23 @@
 }
 
 .hero-copy > p {
-  font-size: 17px;
-  line-height: 1.65;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .hero-note {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .section h2 {
-  font: 800 clamp(34px, 4.2vw, 54px)/1.12 var(--app-font-sans);
-  letter-spacing: -.045em;
+  font: 700 clamp(32px, 3.6vw, 46px)/1.18 var(--app-font-sans);
+  letter-spacing: -.035em;
 }
 
 .section-intro p,
 .domain-copy p,
 .feature-heading p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -80,64 +81,65 @@
 }
 
 .step h3 {
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .step p,
 .faq-answer {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7;
 }
 
 .brand-story blockquote,
 .quote-copy {
   font-family: var(--app-font-sans);
-  font-weight: 700;
-  letter-spacing: -.04em;
+  font-weight: 600;
+  letter-spacing: -.025em;
 }
 
 .seller-name,
 .perk strong,
 .feature-row h3 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .panel-title {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .feature-row p {
   font-size: 14px;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .faq-question {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .faq-heading p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
 .final-cta h2 {
   font-family: var(--app-font-sans);
-  font-size: clamp(42px, 5.4vw, 68px);
-  font-weight: 800;
-  line-height: 1.06;
-  letter-spacing: -.05em;
+  font-size: clamp(40px, 4.8vw, 60px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.04em;
 }
 
 .final-cta p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.65;
 }
 
 .quote-mark {
   font-family: var(--app-font-sans);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 @media (max-width: 900px) {
@@ -148,8 +150,8 @@
 
 @media (max-width: 680px) {
   .hero h1 {
-    font-size: clamp(44px, 12vw, 60px);
-    line-height: 1.05;
+    font-size: clamp(42px, 11vw, 55px);
+    line-height: 1.1;
   }
 
   .hero-copy > p {
@@ -157,16 +159,16 @@
   }
 
   .section h2 {
-    font-size: 37px;
-    line-height: 1.12;
+    font-size: 34px;
+    line-height: 1.18;
   }
 
   .step h3 {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .feature-row h3 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .faq-question {
@@ -174,6 +176,6 @@
   }
 
   .final-cta h2 {
-    font-size: 45px;
+    font-size: 42px;
   }
 }
