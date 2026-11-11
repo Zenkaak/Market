@@ -84,41 +84,26 @@ function App() {
           <div className="container hero-grid">
             <div className="hero-copy">
               <div className="hero-kicker eyebrow reveal"><span className="kicker-dot" /> A home for the things you make</div>
-              <h1 className="display reveal reveal-delay" id="hero-title">Your shop.<br />Your <em>whole</em><br />next chapter.</h1>
-              <p className="reveal reveal-delay-2">Make a beautiful place for your products online. Start with your own Dasmarket shop address, then grow into a brand that feels unmistakably yours.</p>
+              <h1 className="display reveal reveal-delay" id="hero-title">Your shop,<br />all in one place.</h1>
+              <p className="reveal reveal-delay-2">Bring your products together in a storefront made for your brand. Every shop gets its own shareable Dasmarket address from day one.</p>
+              <ul className="hero-benefits reveal reveal-delay-2">
+                <li><CheckCircle2 size={16} /> Your own branded storefront</li>
+                <li><CheckCircle2 size={16} /> A Dasmarket subdomain, ready to share</li>
+                <li><CheckCircle2 size={16} /> Connect a custom domain from settings</li>
+              </ul>
               <div className="hero-ctas reveal reveal-delay-2">
                 <a className="button button-coral" href="#start" data-testid="button-start-shop">Create your shop <ArrowRight size={15} /></a>
                 <a className="button button-outline" href="#how-it-works" data-testid="button-see-how">See how it works <ArrowDown size={14} /></a>
               </div>
-              <div className="hero-note"><CheckCircle2 size={14} /> Start with a shop link. Bring your own domain later.</div>
-            </div>
-            <div className="hero-stage" aria-label="Preview of an independent seller storefront">
-              <div className="shop-window">
-                <div className="shop-inner">
-                  <div className="shop-browser"><i className="browser-dot" /><i className="browser-dot" /><i className="browser-dot" /><span className="browser-url">little-field.dasmarket.com</span></div>
-                  <div className="shop-top"><div className="shop-name">little field studio</div><div className="shop-menu">SHOP&nbsp;&nbsp;&nbsp; ABOUT&nbsp;&nbsp;&nbsp; BAG (0)</div></div>
-                  <div className="shop-visual">
-                    <img src="/images/hero-market.jpg" alt="Sculptural handmade ceramics in a sunlit studio" />
-                    <div className="shop-overlay" />
-                    <div className="shop-caption"><span>Objects for slow living</span><h3>Make room<br />for the good.</h3></div>
-                  </div>
-                  <div className="products-row">
-                    <div className="product-tile"><img src="/images/hero-market.jpg" alt="" /><span className="product-label">The Sunday Vase · $48</span></div>
-                    <div className="product-tile"><img src="/images/maker-story.jpg" alt="" /><span className="product-label">Soft Form Bowl · $36</span></div>
-                    <div className="product-tile"><img src="/images/hero-market.jpg" alt="" /><span className="product-label">Little Glow · $24</span></div>
-                  </div>
-                </div>
-              </div>
-              <div className="float-card domain-card"><small><span className="domain-icon"><Globe2 size={12} /></span> YOUR SHOP ADDRESS</small><strong>little-field.dasmarket.com</strong></div>
-              <div className="float-card sales-card"><span className="sales-badge"><ShoppingBag size={15} /></span><span><small>Your first order</small><strong>It starts here.</strong></span></div>
-              <div className="hero-stamp">MADE FOR<br />INDEPENDENT<br />THINKING</div>
             </div>
           </div>
         </section>
 
-        <div className="ticker" aria-label="Built for independent sellers">
+        <div className="ticker" aria-label="Included with every Dasmarket shop">
           <div className="ticker-track">
-            <span>Good things start small</span><span className="ticker-star">✳</span><span>Made for independent sellers</span><span className="ticker-star">✳</span><span>Your name on the door</span><span className="ticker-star">✳</span><span>Good things start small</span><span className="ticker-star">✳</span><span>Made for independent sellers</span>
+            <div className="ticker-item"><span className="ticker-icon"><Store size={18} /></span><span><strong>Your own storefront</strong><small>Built around your brand</small></span></div>
+            <div className="ticker-item"><span className="ticker-icon"><Globe2 size={18} /></span><span><strong>Dasmarket address</strong><small>Ready with your shop</small></span></div>
+            <div className="ticker-item"><span className="ticker-icon"><ArrowUp size={18} /></span><span><strong>Your own domain</strong><small>Connect it when you’re ready</small></span></div>
           </div>
         </div>
 
@@ -140,16 +125,34 @@ function App() {
         <section className="section brand-section" id="your-brand">
           <div className="container">
             <div className="section-intro">
-              <div><div className="eyebrow section-label">02 / Room to be you</div><h2>Not just a shop. A point of view.</h2></div>
-              <p>Your storefront should feel like an extension of the work you put into everything you make. Make it yours, then let it evolve.</p>
+              <div><div className="eyebrow section-label">02 / Your storefront</div><h2>A shop that feels like your brand.</h2></div>
+              <p>Give your products a clear, welcoming home online. Start with the essentials and shape your storefront as your business grows.</p>
             </div>
-            <div className="brand-showcase">
-              <div className="brand-story">
-                <div className="eyebrow">A little proof of possibility</div>
-                <blockquote>“The shop feels like walking into my studio. That was the whole point.”</blockquote>
-                <div className="seller"><div className="seller-avatar">JM</div><div><div className="seller-name">June Mercer</div><div className="seller-meta">Textile artist · Mercer & Loom</div></div></div>
+            <div className="storefront-showcase">
+              <div className="storefront-copy">
+                <div className="eyebrow">Made for independent sellers</div>
+                <h3>Make room for the good things you make.</h3>
+                <p>Your shop starts with a name and a shareable address. Add your products, tell your story, and make the storefront your own.</p>
+                <a className="button button-dark" href="#domains" data-testid="link-storefront-domains">Explore domain options <ArrowRight size={14} /></a>
               </div>
-              <div className="brand-art"><img src="/images/maker-story.jpg" alt="Colorful textiles and tools in a maker's studio" /><div className="brand-art-label">MERCER & LOOM&nbsp; / &nbsp;FIBER WITH FEELING</div></div>
+              <div className="storefront-preview" aria-label="Example of a Dasmarket seller storefront">
+                <div className="shop-window">
+                  <div className="shop-inner">
+                    <div className="shop-browser"><i className="browser-dot" /><i className="browser-dot" /><i className="browser-dot" /><span className="browser-url">little-field.dasmarket.com</span></div>
+                    <div className="shop-top"><div className="shop-name">little field studio</div><div className="shop-menu">SHOP&nbsp;&nbsp;&nbsp; ABOUT&nbsp;&nbsp;&nbsp; BAG (0)</div></div>
+                    <div className="shop-visual">
+                      <img src="/images/hero-market.jpg" alt="Sculptural handmade ceramics in a sunlit studio" />
+                      <div className="shop-overlay" />
+                      <div className="shop-caption"><span>Objects for slow living</span><h3>Make room<br />for the good.</h3></div>
+                    </div>
+                    <div className="products-row">
+                      <div className="product-tile"><img src="/images/hero-market.jpg" alt="" /><span className="product-label">The Sunday Vase · $48</span></div>
+                      <div className="product-tile"><img src="/images/maker-story.jpg" alt="" /><span className="product-label">Soft Form Bowl · $36</span></div>
+                      <div className="product-tile"><img src="/images/hero-market.jpg" alt="" /><span className="product-label">Little Glow · $24</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="perks">
               <div className="perk"><WandSparkles size={17} /><div><strong>A storefront with your signature</strong><span>Bring your colors, products, and point of view into the picture.</span></div></div>

@@ -367,3 +367,397 @@
 @media (prefers-reduced-motion: reduce) {
   *,*::before,*::after { scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important; }
 }
+
+/* Keep the opening composition focused on the message, not layered mockups. */
+.eyebrow {
+  font: 600 12px/1.4 var(--app-font-sans);
+  letter-spacing: .01em;
+  text-transform: none;
+}
+
+.display {
+  letter-spacing: -.035em;
+}
+
+.hero {
+  min-height: 700px;
+  padding: 164px 0 106px;
+  background-position: center 53%;
+}
+
+.hero:before {
+  background:
+    linear-gradient(90deg, rgba(14, 23, 34, .88) 0%, rgba(14, 23, 34, .67) 55%, rgba(14, 23, 34, .28) 100%),
+    linear-gradient(0deg, rgba(14, 23, 34, .28), transparent 56%);
+}
+
+.hero-grid {
+  display: block;
+}
+
+.hero-copy {
+  max-width: 660px;
+  padding: 7px 0 0;
+}
+
+.hero-kicker {
+  margin-bottom: 23px;
+}
+
+.hero h1 {
+  max-width: 650px;
+  font-size: clamp(52px, 5.6vw, 74px);
+  line-height: 1.06;
+  letter-spacing: -.045em;
+}
+
+.hero-copy > p {
+  max-width: 550px;
+  margin: 22px 0 18px;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.hero-benefits {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: rgba(255, 255, 255, .9);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.hero-benefits svg {
+  flex: none;
+  color: #80adff;
+}
+
+.hero-stage {
+  display: none;
+}
+
+.hero-ctas {
+  gap: 14px;
+}
+
+.hero-ctas .button {
+  min-height: 49px;
+  padding-inline: 23px;
+  font-size: 14px;
+}
+
+.ticker {
+  width: min(1120px, calc(100% - 72px));
+  margin: -40px auto 0;
+  white-space: normal;
+}
+
+.ticker-track {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-width: 0;
+  gap: 0;
+  padding: 20px 24px;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+  padding: 5px 20px;
+}
+
+.ticker-item + .ticker-item {
+  border-left: 1px solid #e3e7ef;
+}
+
+.ticker-icon {
+  display: grid;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 11px;
+  background: #eaf1ff;
+  color: #2469df;
+}
+
+.ticker-item strong,
+.ticker-item small {
+  display: block;
+}
+
+.ticker-item strong {
+  color: #202d40;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ticker-item small {
+  margin-top: 3px;
+  color: #697487;
+  font-size: 12px;
+}
+
+.brand-section {
+  background: #f3f6fb;
+  color: #202d40;
+}
+
+.brand-section:after {
+  display: none;
+}
+
+.brand-section h2 {
+  color: #202d40;
+}
+
+.brand-section .section-label {
+  color: #286bdc;
+}
+
+.brand-section .section-intro p {
+  color: #697487;
+}
+
+.storefront-showcase {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr;
+  align-items: center;
+  gap: 42px;
+  padding: 36px;
+  border: 1px solid #e2e7ef;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 18px 50px rgba(25, 43, 67, .08);
+}
+
+.storefront-copy {
+  max-width: 390px;
+}
+
+.storefront-copy .eyebrow {
+  color: #286bdc;
+}
+
+.storefront-copy h3 {
+  margin: 17px 0 13px;
+  color: #202d40;
+  font: 700 clamp(28px, 3.2vw, 40px)/1.12 var(--app-font-display);
+  letter-spacing: -.04em;
+}
+
+.storefront-copy p {
+  margin: 0 0 22px;
+  color: #697487;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.storefront-copy .button {
+  font-size: 13px;
+}
+
+.storefront-preview {
+  min-width: 0;
+}
+
+.storefront-preview .shop-window {
+  width: 100%;
+  max-width: 620px;
+  height: 374px;
+  margin: 0 auto;
+  padding: 10px;
+  transform: none;
+}
+
+.storefront-preview .shop-visual {
+  height: 177px;
+}
+
+.storefront-preview .product-tile {
+  height: 73px;
+}
+
+.brand-section .perks {
+  margin-top: 33px;
+}
+
+.brand-section .perk {
+  color: #697487;
+}
+
+.brand-section .perk svg {
+  color: #286bdc;
+}
+
+.brand-section .perk strong {
+  color: #202d40;
+}
+
+.brand-section .perk span {
+  color: #697487;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero-grid {
+    display: block;
+  }
+
+  .hero-copy {
+    max-width: 650px;
+  }
+
+  .storefront-showcase {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .storefront-copy {
+    max-width: 600px;
+  }
+
+  .storefront-preview .shop-window {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero {
+    min-height: 0;
+    padding: 124px 0 91px;
+    background-position: 58% center;
+  }
+
+  .hero:before {
+    background:
+      linear-gradient(90deg, rgba(14, 23, 34, .88), rgba(14, 23, 34, .58)),
+      linear-gradient(0deg, rgba(14, 23, 34, .34), transparent 58%);
+  }
+
+  .hero h1 {
+    max-width: 520px;
+    font-size: clamp(43px, 11.3vw, 58px);
+    line-height: 1.08;
+  }
+
+  .hero-copy > p {
+    margin: 18px 0 17px;
+    font-size: 15px;
+  }
+
+  .hero-benefits {
+    gap: 11px;
+    margin-bottom: 23px;
+  }
+
+  .hero-benefits li {
+    align-items: flex-start;
+    font-size: 13px;
+  }
+
+  .hero-benefits svg {
+    margin-top: 1px;
+  }
+
+  .hero-ctas {
+    gap: 10px;
+  }
+
+  .hero-ctas .button {
+    min-height: 45px;
+    padding-inline: 14px;
+    font-size: 12px;
+  }
+
+  .ticker {
+    width: calc(100% - 30px);
+    margin-top: -31px;
+  }
+
+  .ticker-track {
+    grid-template-columns: 1fr;
+    padding: 8px 17px;
+  }
+
+  .ticker-item {
+    padding: 12px 3px;
+  }
+
+  .ticker-item + .ticker-item {
+    border-top: 1px solid #e3e7ef;
+    border-left: 0;
+  }
+
+  .ticker-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .storefront-showcase {
+    gap: 22px;
+    padding: 20px;
+    border-radius: 13px;
+  }
+
+  .storefront-copy h3 {
+    font-size: 30px;
+  }
+
+  .storefront-preview .shop-window {
+    height: 300px;
+    padding: 8px;
+  }
+
+  .storefront-preview .shop-browser {
+    height: 24px;
+  }
+
+  .storefront-preview .shop-top {
+    padding: 10px 12px 8px;
+  }
+
+  .storefront-preview .shop-name {
+    font-size: 14px;
+  }
+
+  .storefront-preview .shop-menu {
+    display: none;
+  }
+
+  .storefront-preview .shop-visual {
+    height: 137px;
+    margin-inline: 7px;
+  }
+
+  .storefront-preview .shop-caption {
+    left: 12px;
+    bottom: 10px;
+  }
+
+  .storefront-preview .shop-caption h3 {
+    font-size: 20px;
+  }
+
+  .storefront-preview .products-row {
+    gap: 5px;
+    padding: 7px;
+  }
+
+  .storefront-preview .product-tile {
+    height: 63px;
+  }
+}
