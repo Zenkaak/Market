@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --app-font-sans: 'Plus Jakarta Sans', sans-serif;
+  --app-font-serif: 'Plus Jakarta Sans', sans-serif;
+  --app-font-mono: 'JetBrains Mono', monospace;
+}
+
+.eyebrow {
+  font: 600 11px/1.35 var(--app-font-sans);
+  letter-spacing: .08em;
+}
+
+.display {
+  font-family: var(--app-font-sans);
+  font-weight: 800;
+  letter-spacing: -.05em;
+}
+
+.brand,
+.brand-mark {
+  font-family: var(--app-font-sans);
+  letter-spacing: -.045em;
+}
+
+.nav-links a,
+.footer-links a,
+.nav-login {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.button {
+  font-family: var(--app-font-sans);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-family: var(--app-font-sans);
+  font-size: clamp(50px, 5.6vw, 74px);
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -.055em;
+}
+
+.hero h1 em {
+  font: inherit;
+  font-style: normal;
+  color: #e97855;
+}
+
+.hero-copy > p {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.hero-note {
+  font-size: 12px;
+}
+
+.section h2 {
+  font: 800 clamp(34px, 4.2vw, 54px)/1.12 var(--app-font-sans);
+  letter-spacing: -.045em;
+}
+
+.section-intro p,
+.domain-copy p,
+.feature-heading p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.step h3,
+.feature-row h3,
+.panel-title,
+.faq-question {
+  font-family: var(--app-font-sans);
+  letter-spacing: -.035em;
+}
+
+.step h3 {
+  font-size: 22px;
+}
+
+.step p,
+.faq-answer {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.brand-story blockquote,
+.quote-copy {
+  font-family: var(--app-font-sans);
+  font-weight: 700;
+  letter-spacing: -.04em;
+}
+
+.seller-name,
+.perk strong,
+.feature-row h3 {
+  font-weight: 700;
+}
+
+.panel-title {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.feature-row p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.faq-question {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.faq-heading p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.final-cta h2 {
+  font-family: var(--app-font-sans);
+  font-size: clamp(42px, 5.4vw, 68px);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -.05em;
+}
+
+.final-cta p {
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.quote-mark {
+  font-family: var(--app-font-sans);
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .nav-links a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero h1 {
+    font-size: clamp(44px, 12vw, 60px);
+    line-height: 1.05;
+  }
+
+  .hero-copy > p {
+    font-size: 15px;
+  }
+
+  .section h2 {
+    font-size: 37px;
+    line-height: 1.12;
+  }
+
+  .step h3 {
+    font-size: 20px;
+  }
+
+  .feature-row h3 {
+    font-size: 16px;
+  }
+
+  .faq-question {
+    font-size: 15px;
+  }
+
+  .final-cta h2 {
+    font-size: 45px;
+  }
+}
