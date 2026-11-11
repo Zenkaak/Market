@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Dasmarket"
+description = "A marketing landing page for Dasmarket, a multi-tenant marketplace where sellers can launch branded shops on their own subdomains and connect custom domains from dashboard settings."
+version = "1.0.0"
+id = "artifacts/dasmarket"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20338
+
+[services.development]
+run = "pnpm --filter @workspace/dasmarket run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/dasmarket", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/dasmarket/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20338"
+BASE_PATH = "/"
